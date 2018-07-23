@@ -11,7 +11,7 @@ contract Election {
     //Fetch candidate
     mapping(uint => Candidate) public candidates;
     //Store candidates count
-    uint public candidateCount;
+    uint public candidatesCount;
     
     function Election() public {
         addCandidate("Candidate 1");
@@ -19,7 +19,7 @@ contract Election {
     }
 
     function addCandidate (string _name) private {
-        candidateCount ++;
-        candidates[candidateCount] = Candidate(candidateCount, _name, 0);
+        candidatesCount ++;
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
 }
