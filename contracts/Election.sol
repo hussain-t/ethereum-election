@@ -5,6 +5,7 @@ contract Election {
     //Read candidate
     string public candidate;
     //Constructor
+    //Initial smoke test
     function Election() public {
         candidate = "Candidate 1";
     }
