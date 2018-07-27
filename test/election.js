@@ -1,3 +1,4 @@
+//Unit test with Mocha and Chai
 var Election = artifacts.require("./Election.sol");
 
 contract("Election", function (accounts) {
